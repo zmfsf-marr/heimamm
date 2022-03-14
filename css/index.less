@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color:transparent; /*取消点击按钮背景高亮*/
+    -webkit-appearance:none; /*去除浏览器按钮输入框默认样式*/
+}
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    // height: 3200px;
+    background-color: #f2f4f7;
+}
+// 约束当屏幕大于20rem的时候，html字体大小不变化
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 37.5px!important;
+    }
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?agb2zo');
+    src: url('../fonts/icomoon.eot?agb2zo#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?agb2zo') format('truetype'), url('../fonts/icomoon.woff?agb2zo') format('woff'), url('../fonts/icomoon.svg?agb2zo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+.style-org{
+    color: #ff6600;
+}
+.warp {
+    background-color: #fff;
+    padding-bottom: 1.1467rem;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+}
+.header {
+    height: 2.1333rem;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+    line-height: 2.1333rem;
+    font-size: .9333rem;
+    color: #1c1c1c;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.2rem 0 1.6rem 0;
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33.33%;
+        img {
+            width: 3.7067rem;
+            height: 3.7067rem;
+        }
+        span {
+            font-size: .6667rem;
+        }
+        &:nth-child(-n+3) {
+            margin-bottom: 1.6533rem;
+        }
+    }
+}
+.go {
+    margin: 0 .2667rem 0 0.48rem;
+    img {
+        width: 100%;
+        height: 2.9334rem;
+        border-radius: 2.9334rem;
+    }
+}
+.content {
+    padding: 1.0667rem .64rem;
+    margin-top: .2667rem;
+    background-color: #fff;
+    .con-hd {
+        display: flex;
+        justify-content: space-between;
+        height: 1.0133rem;
+        line-height: 1.0133rem;
+        margin-bottom: 0.9147rem;
+        // background-color: pink;
+        h4 {
+            font-size: .4267rem;
+            .icon {
+                display: inline-block;
+                width: .96rem;
+                height: .96rem;
+                vertical-align: bottom;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .more {
+            font-size: .4267rem;
+            color: #999;
+        }
+    }
+}
+
+.get_job_focus {
+    position: relative;
+    --swiper-theme-color: #ff6600;/* 设置Swiper风格 */
+    --swiper-navigation-color: #00ff33;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 30px;/* 设置按钮大小 */
+    // 已在全局更改
+    // -webkit-tap-highlight-color:transparent; /*取消点击按钮背景高亮*/
+    // -webkit-appearance:none; /*去除浏览器按钮输入框默认样式*/
+    outline: none;
+    .swiper-container {
+        // width: 100%;
+        height: 100%;
+        // 将轮播图整体宽度缩小
+        width: 14.4rem;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        // 兄弟图片缩放大小
+        transform: scale(0.8);
+        // 兄弟图片透明度
+        opacity: 0.4;
+        
+        a {
+            width: 9.0133rem;
+            // width: 6.3467rem;
+            // height: 7.1467rem;
+            height: 10.0267rem;
+            img {
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+        p {
+            margin: .64rem;
+            width: 9.0133rem;
+            font-size: .6667rem;
+            color: #333;
+        }
+      }
+    //   选中的图片缩放大小
+      .swiper-slide-active,.swiper-slide-duplicate-active{
+        transform: scale(1);
+        z-index: 999;
+        opacity: 1;
+      }
+}
+.study {
+    margin-bottom: 2.6667rem;
+    .study_fo {
+        padding: .2667rem .48rem;
+    }
+    .swiper-slide {
+        // text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 7.7333rem;
+        height: 9.0667rem;
+        background-color: #fff;
+        border-radius: .2667rem;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        /* Center slide text vertically */
+        // display: -webkit-box;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
+        // display: flex;
+        // -webkit-box-pack: center;
+        // -ms-flex-pack: center;
+        // -webkit-justify-content: center;
+        // justify-content: center;
+        // -webkit-box-align: center;
+        // -ms-flex-align: center;
+        // -webkit-align-items: center;
+        // align-items: center;
+        a {
+            font-size: .48rem;
+            h5 {
+                font-size: .6933rem;
+                margin: .5333rem .1333rem;
+            }
+            img {
+                width: 100%;
+            }
+            span {
+                padding-left: .3733rem;
+            }
+        }
+      }
+
+    //   .swiper-slide img {
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //   }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    padding-top: .5333rem;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 2.9333rem;
+    background-color: #fff;
+    z-index: 999;
+    .item {
+        text-align: center;
+        color: #666;
+        flex: 1;
+        &::before {
+            font-family: icomoon;
+        }
+        &:nth-child(1)::before {
+            content: '\efe3';
+        }
+        &:nth-child(2)::before {
+            content: '\eb1c';
+        }
+        &:nth-child(3)::before {
+            content: '\f0af';
+        }
+        &:nth-child(4)::before {
+            content: '\f07d';
+        }
+        p {
+            margin-top: .2667rem;
+            font-size: .5867rem;
+        }
+    }
+    .item:hover {
+        color: #00ff33;
+    }
+}
